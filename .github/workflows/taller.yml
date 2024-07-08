@@ -33,9 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ Taller ]
     steps:
-    
+
       - name: checkout
         uses: actions/checkout@v4
 
       - name: ver contenido archivo
-        run: cat tallergithub.txt
+        run: |
+          ls -la
+          cat tallergithub.txt
